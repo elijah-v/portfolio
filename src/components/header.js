@@ -1,42 +1,32 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
+import { FaBars } from 'react-icons/fa'
+import Sidebar from './Sidebar'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import './Header.css'
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Header = ({ siteTitle}) => {
+  const [open, setOpen] = useState(false);
+
+  const MobileMenu = ()=>{
+      setOpen(!open);
+  }
+
+  return (
+  <>
+  <nav className="sidebar__container">
+  <Sidebar open={open}  MobileMenu={MobileMenu}/>
+  <FaBars className='faBars' onClick={MobileMenu}/>
+    <ul className="navOptions">
+    <li><Link className="navLinks" activeClassName="on-site" to='#project-page-1'>Home</Link></li>
+    <li><Link className="navLinks" activeClassName="on-site" to='#about'>About</Link></li>
+    <li><Link className="navLinks" activeClassName="on-site" to='#resume'>Resume</Link></li>
+    <li><Link className="navLinks" activeClassName="on-site" to='#contact'>Contact</Link></li>
+    </ul>
+    </nav>
+  </>
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
