@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
 
 `)
 
-  const url = typeof window.location.href !== 'undefined' ? window.location.hash:''
+  const url = typeof window !== 'undefined' ? window.location.hash:''
   
 
   return (
