@@ -61,9 +61,9 @@ const Layout = ({ children }) => {
       <div className='content' >
       <div className='text-container'>
       <h1>Football Site</h1>
-      <h3>Tech Stack</h3>
+      <h4>Tech Stack</h4>
       <p>React JS - Gatsby - JavaScript - HTML5 - CSS</p>
-      <h3>Description</h3>
+      <h4>Description</h4>
       <p>A football website</p>
       <div className='buttons-container'>
       <button><a href='https://cranky-hoover-104d1a.netlify.app/' rel='noreferrer' target='_blank'>Hosted Site</a></button>
@@ -79,9 +79,9 @@ const Layout = ({ children }) => {
       <div className='content' >
       <div className='text-container'>
       <h1>Amazon Clone</h1>
-      <h3>Tech Stack</h3>
+      <h4>Tech Stack</h4>
       <p>React JS - JavaScript - HTML5 - CSS</p>
-      <h3>Description</h3>
+      <h4>Description</h4>
       <p>An E-commerce website with similar design to the Amazon website.</p>
       <div className='buttons-container'>
       <button><a href='https://e-commerce-65776.web.app' rel='noreferrer' target='_blank'>Hosted Site</a></button>
@@ -96,9 +96,9 @@ const Layout = ({ children }) => {
       <div className='content' >
       <div className='text-container'>
       <h1>Kal</h1>
-      <h3>Tech Stack</h3>
+      <h4>Tech Stack</h4>
       <p>React JS - JavaScript - HTML5 - CSS - API</p>
-      <h3>Description</h3>
+      <h4>Description</h4>
       <p>Kal allows to search for every food that you eat or plan to eat throughout the day and it will subtract the calories consumed from the maximum calories needed to achieve your target weight in the desired timeframe set in weeks.</p>
       <div className='buttons-container'>
       <button><a href='https://kal-1-2557e.web.app' rel='noreferrer' target='_blank'>Hosted Site</a></button>
@@ -114,9 +114,9 @@ const Layout = ({ children }) => {
       <div className='content' >
       <div className='text-container'>
       <h1>Tasks2</h1>
-      <h3>Tech Stack</h3>
+      <h4>Tech Stack</h4>
       <p>React JS - JavaScript - HTML5 - CSS</p>
-      <h3>Description</h3>
+      <h4>Description</h4>
       <p>Keep track of your weekly activities with a simple app.</p>
       <div className='buttons-container'>
       <button><a href='https://tasks2-4ae08.web.app' rel='noreferrer' target='_blank'>Hosted Site</a></button>
@@ -149,14 +149,14 @@ I value connecting with my team members and customers and want to work hard to h
       <div className='content' >
       <div className='text-container resume'>
       <h1>Resume</h1>
-      <h3>Skills</h3>
+      <h4>Skills</h4>
       <ul className='skills-ul'>
         <li className='skills-li'><p>JavaScript</p></li>
         <li className='skills-li'><p>HTML5</p></li>
         <li className='skills-li'><p>CSS/SCSS</p></li>
         <li className='skills-li'><p>React JS</p></li>
       </ul>
-      <h3>Education</h3>
+      <h4>Education</h4>
       <p>Graduated as a Medical Doctor from the Central University of Venezuela in 2018.</p>
       </div>
       </div>
